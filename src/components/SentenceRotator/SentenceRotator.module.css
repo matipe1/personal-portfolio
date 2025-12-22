@@ -1,0 +1,22 @@
+.window {
+    height: 1.5em;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+
+    position: relative;
+    top: 5px;
+}
+
+.tape {
+    animation: slideUp 6s ease-in-out infinite;
+}
+
+
+@keyframes slideUp {
+    0%, 40% { transform: translateY(0); }
+
+    50%, 90% { transform: translateY(-1.5em); }
+
+    100% { transform: translateY(-3em); }
+}
