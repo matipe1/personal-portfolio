@@ -1,4 +1,3 @@
-import { Download } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 interface Item {
@@ -33,8 +32,7 @@ export const Navbar = () => {
                 }
                 <li>
                     <button className={styles.cvButton}>
-                        {<Download size={16} />}
-                        <span>CV</span>
+                        <span>Resume</span>
                     </button>
                 </li>
             </ul>
