@@ -7,7 +7,7 @@ export const Portfolio = () => {
     const [visibleCount, setVisibleCount] = useState(2);
 
     const handleShowMore = () => {
-        setVisibleCount((prev) => prev + 3);
+        setVisibleCount((prev) => prev + 2);
     }
     return (
         <section id="portfolio" className={styles.portfolioContainer}>
