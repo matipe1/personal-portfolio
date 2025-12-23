@@ -31,9 +31,12 @@ export const Navbar = () => {
                     ))
                 }
                 <li>
-                    <button className={styles.cvButton}>
+                    <a  href="https://drive.google.com/file/d/1RalTzTVup9xyhKgeS3YWOgqcROdzNWLM/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.cvButton}>
                         <span>Resume</span>
-                    </button>
+                    </a>
                 </li>
             </ul>
         </nav>

@@ -67,6 +67,7 @@
 .cvButton {
     background-color: var(--color-primary);
     color: white;
+    text-decoration: none;
     border: none;
     padding: 0.6rem 0.8rem;
     border-radius: 25px;
