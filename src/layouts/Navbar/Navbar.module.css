@@ -8,11 +8,23 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: .6rem;
-    background-color: rgba(0, 0, 0, 0.05); /* background: transparent; */
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid #333;
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2) 20%,
+        transparent 100%
+    );
+    backdrop-filter: blur(3px);
     z-index: 1000;
+}
+
+
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-4px);
+    text-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
 }
 
 .logo a {
@@ -21,6 +33,15 @@
     color: var(--color-secondary);
     text-decoration: none;
     letter-spacing: -0.5px;
+}
+
+.interact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.2rem;
 }
 
 .navLinks {
@@ -56,7 +77,6 @@
 
 .link:hover {
     color: var(--color-primary);
-    
 }
 
 .link:hover::after {
@@ -85,4 +105,5 @@
 .cvButton:hover {
     background-color: var(--color-primary-hover);
     transform: translateY(-1px);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 }

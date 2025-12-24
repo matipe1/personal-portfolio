@@ -1,3 +1,4 @@
+import { ThemeToggle } from '../../components/ThemeToggle/ThemeToggle';
 import styles from './Navbar.module.css';
 
 interface Item {
@@ -20,25 +21,30 @@ export const Navbar = () => {
             <div className={styles.logo}>
                 <a href="#">Diego Petitto</a>
             </div>
-            <ul className={styles.navLinks}>
-                {
-                    navItems?.map((item) => (
-                        <li key={item.name}>
-                            <a href={item.href} className={styles.link}>
-                                {item.name}
-                            </a>
-                        </li>
-                    ))
-                }
-                <li>
-                    <a  href="https://drive.google.com/file/d/1RalTzTVup9xyhKgeS3YWOgqcROdzNWLM/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.cvButton}>
-                        <span>Resume</span>
-                    </a>
-                </li>
-            </ul>
+            <div className={styles.interact}>
+                <ul className={styles.navLinks}>
+                    {
+                        navItems?.map((item) => (
+                            <li key={item.name}>
+                                <a href={item.href} className={styles.link}>
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))
+                    }
+                    <li>
+                        <a  href="https://drive.google.com/file/d/1RalTzTVup9xyhKgeS3YWOgqcROdzNWLM/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.cvButton}>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <ThemeToggle />
+                </div>
+            </div>
         </nav>
     );
 }

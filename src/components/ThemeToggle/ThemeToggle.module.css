@@ -1,36 +1,12 @@
-.icon {
-    height: 1.5rem;
-    width: 1.5rem;
-    font-weight: 300;
-}
-
 .sun {
     color: yellow;
 }
 
 .moon {
-    color: blue;
+    color: var(--color-primary);
 }
 
 .toggleButton {
-    position: fixed;
-    top: 3.8rem;
-    right: 0.5rem;
-    z-index: 100;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition-property: background-color, border-color;
-    transition-duration: 300ms;   
     background-color: transparent;
     border-color: transparent;
-}
-
-.button:focus {
-    outline-style: hidden;
-}
-
-@media (max-width: 640px) {
-    .hideMaxSm {
-        display: none !important;
-    }
 }
