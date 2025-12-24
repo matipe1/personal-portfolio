@@ -12,12 +12,14 @@
     font-weight: bold;
     line-height: 3rem;
     color: var(--color-primary);
+    text-shadow: 1px -1px 1px var(--color-secondary);
 }
 
 .subtitle {
     font-size: 1.5rem;
     color: var(--color-secondary);
     margin-bottom: 1rem;
+    text-shadow: 0 0 var(--color-third);
 }
 
 .description {
