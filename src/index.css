@@ -29,14 +29,14 @@
     box-sizing: border-box;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     font-feature-settings: "rlig" 1, "calt" 1;
     margin: 0;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .dark {
