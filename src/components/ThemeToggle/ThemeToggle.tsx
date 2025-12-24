@@ -9,8 +9,8 @@ export const ThemeToggle = () => {
         <button onClick={toggle}
                 className={`${styles.toggleButton} ${styles.hideMaxSm}`}>
             {isDark ? 
-            <Sun className={`${styles.icon} ${styles.sun}`} /> :
-            <Moon className={`${styles.icon} ${styles.moon}`}/>}
+            <Sun className={`${styles.icon} ${styles.sun} ${styles.rotate}`} /> :
+            <Moon className={`${styles.icon} ${styles.moon} ${styles.rotate}`}/>}
         </button>
     )
 }
