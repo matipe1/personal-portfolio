@@ -4,7 +4,12 @@
   font-weight: 400;
 
   /* Light mode */
-  --background: hsl(210 40% 90%);
+  --background: linear-gradient(
+    180deg, 
+    hsl(210 40% 98%) 0%, 
+    hsla(244, 50%, 73%, 0.89) 100%
+  );
+
   --card: hsl(0 0% 100%);
 
   --primary: hsl(250 100% 66%);
@@ -32,6 +37,11 @@
   body {
     font-feature-settings: "rlig" 1, "calt" 1;
     margin: 0;
+
+    background: var(--color-background); 
+    background-attachment: fixed; /* Optional: Keeps gradient fixed while scrolling */
+    min-height: 100vh; /* Ensures gradient covers full screen */
+    color: var(--color-secondary); /* Ensure text has color */
   }
 }
 
@@ -41,9 +51,14 @@ html {
 
 .dark {
   /* Dark mode */
-  --background: hsl(222 47% 4%);
+  --background: linear-gradient(
+    180deg, 
+    hsl(257, 48%, 12%) 0%, 
+    hsl(0, 0%, 0%) 100%
+  );
+
   --card: hsl(222 47% 8%);
-  --primary: hsl(250 100% 80%);
+  --primary: hsla(250, 92%, 75%, 0.9);
   --secondary: hsl(222 10% 80%);
   --third: hsl(222 10% 65%);
   --border: hsl(217 33% 20%);
