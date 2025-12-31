@@ -9,7 +9,7 @@
     hsl(210 40% 98%) 0%, 
     hsla(244, 50%, 73%, 0.89) 100%
   );
-
+  --background-hamburger: hsla(255, 100%, 95%, 0.9);
   --card: hsl(0 0% 93%);
 
   --primary: hsl(250 100% 66%);
@@ -21,6 +21,7 @@
 
   /* Semantic color variables */
   --color-background: var(--background);
+  --color-background-hamburger: var(--background-hamburger);
   --color-card: var(--card);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
@@ -56,6 +57,7 @@ html {
     hsl(257, 48%, 12%) 0%, 
     hsl(0, 0%, 0%) 100%
   );
+  --background-hamburger: hsla(255, 100%, 5%, 0.9);
 
   --card: hsl(222 47% 8%);
   --primary: hsla(250, 92%, 75%, 0.9);
