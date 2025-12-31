@@ -10,14 +10,14 @@
     hsla(244, 50%, 73%, 0.89) 100%
   );
 
-  --card: hsl(0 0% 100%);
+  --card: hsl(0 0% 93%);
 
   --primary: hsl(250 100% 66%);
   --secondary: hsl(222 10% 20%);
   --third: hsl(222 10% 32%);
   --primary-hover: hsl(237, 100%, 73%);
 
-  --border: hsl(214 32% 91%);
+  --border: hsl(0, 0%, 80%);
 
   /* Semantic color variables */
   --color-background: var(--background);
