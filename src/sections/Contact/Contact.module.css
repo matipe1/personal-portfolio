@@ -1,0 +1,113 @@
+.contactContainer {
+    padding: 6rem 10%;
+    background: var(--color-background);
+    box-shadow: 0 -25px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.fields {
+    width: 100%;
+    max-width: 500px; /* Or whatever width you prefer */
+}
+
+.inputGroup {
+    padding: 15px 0 0 0;
+    color: var(--color-third);
+}
+
+.field {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(100, 108, 255, 0.2);
+    box-shadow: 0 0 2px rgba(100, 108, 255, 0.8);
+    margin-top: 2px;
+    background-color: #ffffffde;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.message {
+    height: 200px;
+    resize: none;
+}
+
+.form button {
+    width: 100%;
+    height: 55px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(100, 108, 255, 0.8);
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Restore SweetAlert2's own styling where needed */
+:global(.swal2-popup) {
+    box-sizing: border-box;
+    padding: var(--swal2-padding);
+}
+
+:global(.swal2-actions) {
+    margin: var(--swal2-actions-margin);
+    padding: var(--swal2-actions-padding);
+}
+
+:global(.swal2-html-container) {
+    padding: var(--swal2-html-container-padding);
+}
+
+:global(.swal2-title) {
+    padding: var(--swal2-title-padding);
+    margin: 0;
+}
+
+/* Custom SweetAlert2 styling */
+:global(.custom-swal-popup) {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-border);
+    padding: 2rem;
+}
+
+:global(.custom-swal-title) {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+:global(.custom-swal-button) {
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+:global(.custom-swal-button:hover) {
+    background-color: var(--color-primary-hover) !important;
+    transform: translateY(-1px);
+}
